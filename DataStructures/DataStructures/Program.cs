@@ -6,13 +6,12 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            LinkedList ln = new LinkedList();
-            ln.Add(56);
-            ln.Add(30);
-            ln.Add(70);
-            ln.RemoveLastNode();
-            Console.WriteLine("After removing is : ");
-            ln.Display();
+            Queue qu = new Queue();
+            qu.Enqueue(70);
+            qu.Enqueue(30);
+            qu.Enqueue(56);
+            qu.Dequeue();
+            qu.Display();
         }
     }
 }
