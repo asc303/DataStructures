@@ -10,7 +10,6 @@ namespace DataStructures
             qu.Enqueue(70);
             qu.Enqueue(30);
             qu.Enqueue(56);
-            qu.Dequeue();
             qu.Display();
         }
     }
