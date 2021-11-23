@@ -15,14 +15,12 @@ namespace DataStructures
         internal void Enqueue(int data)
         {
             Node newNode = new Node(data);
-            // If queue is empty, then new node is front and rear both 
             if (this.rear == null)
             {
                 this.front = this.rear = newNode;
             }
             else
             {
-                // Add the new node at the end of queue and change rear
                 this.rear.next = newNode;
                 this.rear = newNode;
             }
@@ -52,12 +50,11 @@ namespace DataStructures
             }
             Node temp = this.front;
             this.front = this.front.next;
-            // If front becomes null, then change rear also as null  
             if (this.front == null)
             {
                 this.rear = null;
             }
-            Console.WriteLine("{0} is deleted from the Queue", temp.data);
+            Console.WriteLine("{0} is deleted from the Queueue", temp.data);
         }
     }
 }
